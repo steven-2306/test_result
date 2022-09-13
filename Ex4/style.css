@@ -1,0 +1,65 @@
+#wrapper {
+    width: 50%;
+    height: 700px;
+    background-color: aquamarine;
+}
+.header {
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 822px;
+}
+
+.image-container > div.card {
+    flex: 49%;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 263px;
+    position: relative;
+}
+
+.image-container > div > p {
+    position: relative;
+    display: none;
+    bottom: 151px;
+    left: 1%;
+    color: azure;
+    z-index: 2;
+}
+
+.image-container .first-img > img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+}
+
+.image-container .second-img > img{
+    width: 400px;
+    height: 260px;
+}
+
+.image-container .third-img > img{
+    width: 260px;
+    height: 260px;
+}
+
+.image-container .fourth-img > img{
+    width: 400px;
+    height: 260px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.overlay {
+    background-color: black;
+    opacity: 0.4;
+    display: none;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+}
